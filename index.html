@@ -42,10 +42,56 @@
 
   <main>
     <div id="app"></div>
-  </main>
+    <html lang="en-ca">
 
-  <!-- Add JavaScript File -->
-  <script src="./script.js"></script>
 
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
+    
+      <title>Todo App - Liam Power</title>
+    
+    
+      <!-- External Stylesheets -->
+      <link rel="stylesheet" href="./reset.css" />
+      <link rel="stylesheet" href="./style.css" />
+    
+    
+      <!-- Favicon -->
+      <link rel="icon" href="./images/favicon/rocket.svg" type="image/svg+xml" />
+    </head>
+    
+    
+    <body>
+      <header>
+        <nav class="nav-container">
+          <div class="nav-content">
+            <span class="nav-title">TASK MANAGER</span>
+          </div>
+        </nav>
+      </header>
+    
+    
+      <main>
+        <div id="tasks-container">
+          <h2>Your Tasks:</h2>
+          <div class="input-area">
+            <input type="text" id="task-input" placeholder="Enter a new task">
+            <button id="add-task">Add Task</button>
+            <button id="clear-tasks">Clear All</button>
+          </div>
+          <!-- Task list -->
+          <ul class="task-list" id="task-list"></ul>
+        </div>
+      </main>
+    
+      <!-- Notification area -->
+      <div id="notification-area"></div>
+      <!-- JavaScript File -->
+      <script src="./script.js"></script>
+    </body>
+    </html>    
 </body>
 </html>
